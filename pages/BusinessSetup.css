@@ -1,0 +1,304 @@
+
+/* ========================================
+   PROFITTRACK BUSINESS SETUP
+======================================== */
+
+.setup-page {
+  min-height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 48px 20px;
+  background: #f5f7f5;
+  color: #202b24;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.setup-page *,
+.setup-page *::before,
+.setup-page *::after {
+  box-sizing: border-box;
+}
+
+/* Main form card */
+
+.setup-card {
+  width: 100%;
+  max-width: 680px;
+  padding: 36px 42px;
+  background: #ffffff;
+  border: 1px solid #e5eae5;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(28, 55, 35, 0.05);
+}
+
+/* Brand header */
+
+.setup-header {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  margin-bottom: 38px;
+  color: #203b2b;
+  font-size: 21px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.setup-logo {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 11px;
+  background: #247447;
+  color: #ffffff;
+  font-size: 23px;
+  font-weight: 700;
+}
+
+/* Introductory text */
+
+.setup-intro {
+  margin-bottom: 32px;
+}
+
+.setup-eyebrow {
+  margin: 0 0 12px;
+  color: #267849;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.6px;
+  line-height: 1.5;
+}
+
+.setup-intro h1 {
+  max-width: 520px;
+  margin: 0 0 13px;
+  color: #1e3024;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -1.1px;
+}
+
+.setup-intro > p:last-child {
+  max-width: 500px;
+  margin: 0;
+  color: #69756d;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+/* Form layout */
+
+.setup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+}
+
+/* Section dividers */
+
+.setup-divider {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 10px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #e8ede8;
+}
+
+.setup-divider span {
+  color: #354b3b;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.1px;
+  line-height: 1.5;
+}
+
+.setup-divider small {
+  flex-shrink: 0;
+  padding: 5px 9px;
+  border-radius: 20px;
+  background: #f0f5f0;
+  color: #647568;
+  font-size: 11px;
+}
+
+/* Labels, inputs and dropdowns */
+
+.setup-field {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  min-width: 0;
+}
+
+.setup-field label {
+  color: #28372d;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.setup-field input,
+.setup-field select {
+  display: block;
+  width: 100%;
+  min-height: 48px;
+  padding: 12px 14px;
+  border: 1px solid #dce4dc;
+  border-radius: 8px;
+  outline: none;
+  background: #ffffff;
+  color: #26372b;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 1.5;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
+}
+
+.setup-field input::placeholder {
+  color: #a0aaa2;
+}
+
+.setup-field select {
+  cursor: pointer;
+}
+
+.setup-field input:hover,
+.setup-field select:hover {
+  border-color: #a8bcae;
+}
+
+.setup-field input:focus,
+.setup-field select:focus {
+  border-color: #328052;
+  box-shadow: 0 0 0 3px rgba(50, 128, 82, 0.12);
+}
+
+.setup-field input:focus-visible,
+.setup-field select:focus-visible {
+  outline: 2px solid transparent;
+}
+
+/* Supporting text beneath fields */
+
+.setup-help {
+  color: #78837a;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+/* Submit button */
+
+.setup-submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: 100%;
+  min-height: 51px;
+  margin-top: 8px;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 8px;
+  background: #267447;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.setup-submit span {
+  font-size: 19px;
+  line-height: 1;
+}
+
+.setup-submit:hover {
+  background: #1d6038;
+  box-shadow: 0 5px 14px rgba(38, 116, 71, 0.16);
+}
+
+.setup-submit:active {
+  transform: translateY(1px);
+}
+
+.setup-submit:focus-visible {
+  outline: 3px solid #a7d6b5;
+  outline-offset: 3px;
+}
+
+/* Privacy and storage note */
+
+.setup-note {
+  margin: -7px 0 0;
+  color: #879188;
+  font-size: 12px;
+  line-height: 1.7;
+  text-align: center;
+}
+
+/* Smaller screens */
+
+@media (max-width: 600px) {
+  .setup-page {
+    padding: 20px 12px;
+  }
+
+  .setup-card {
+    padding: 25px 20px;
+    border-radius: 12px;
+  }
+
+  .setup-header {
+    margin-bottom: 30px;
+    font-size: 19px;
+  }
+
+  .setup-intro {
+    margin-bottom: 27px;
+  }
+
+  .setup-intro h1 {
+    font-size: 28px;
+    letter-spacing: -0.7px;
+  }
+
+  .setup-intro > p:last-child {
+    font-size: 13px;
+  }
+
+  .setup-form {
+    gap: 18px;
+  }
+
+  .setup-field input,
+  .setup-field select {
+    min-height: 47px;
+    font-size: 14px;
+  }
+}
+
+/* Respect reduced-motion preferences */
+
+@media (prefers-reduced-motion: reduce) {
+  .setup-field input,
+  .setup-field select,
+  .setup-submit {
+    transition: none;
+  }
+}
